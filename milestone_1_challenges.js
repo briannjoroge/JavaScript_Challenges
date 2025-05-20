@@ -58,3 +58,20 @@ function canDrive(name, age) {
 
 canDrive("Jane", 22);
 canDrive("June", 12);
+
+//6. Largest Number
+function findLargest(a, b, c) {
+  if (a > b || a > b) {
+    console.log(`${a} is largest.`);
+  } else if (b > a || b > c) {
+    console.log(`${b} is largest.`);
+  } else if (a === b && a === c) {
+    console.log(`${a} is the largest.`);
+  } else {
+    console.log(`${c} is the largest.`);
+  }
+}
+
+findLargest(5, 9, 3);
+findLargest(10, 10, 10);
+findLargest(-1, -5, -3);
