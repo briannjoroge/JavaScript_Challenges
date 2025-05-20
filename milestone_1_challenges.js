@@ -21,3 +21,28 @@ function convert(min) {
 
 convert(5);
 convert(1);
+
+//3. Perimeter of a Rectangle
+let width, length;
+function findPerimeter(width, length) {
+  let perimeter = 2 * (width + length);
+  console.log(
+    `Perimeter of rectangle of width ${width} and length ${length} is ${perimeter}`,
+  );
+}
+
+findPerimeter(6, 7);
+findPerimeter(20, 10);
+
+//4. Check Negative
+let negativeNumber;
+function isNegative(negativeNumber) {
+  if (negativeNumber < 0) {
+    console.log(`true`);
+  } else {
+    console.log(`false`);
+  }
+}
+
+isNegative(-23);
+isNegative(55);
