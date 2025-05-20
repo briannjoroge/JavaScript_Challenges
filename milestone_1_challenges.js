@@ -1,9 +1,23 @@
 //1. Return the Sum of Two Numbers
 let num1, num2;
 function addition(num1, num2) {
-    let sum = num1 + num2;
-    console.log(`${num1} + ${num2} = ${sum}`)
+  let sum = num1 + num2;
+  console.log(`${num1} + ${num2} = ${sum}`);
 }
 
-addition(3,5)
-addition(-6,9)
+addition(3, 5);
+addition(-6, 9);
+
+//2. Convert Minutes into Seconds
+let min;
+function convert(min) {
+  let secondds = min * 60;
+  if (min === 1) {
+    console.log(`${min} minute is equivalent to ${secondds} seconds`);
+  } else {
+    console.log(`${min} minutes is equivalent to ${secondds} seconds`);
+  }
+}
+
+convert(5);
+convert(1);
