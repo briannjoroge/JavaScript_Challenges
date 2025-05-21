@@ -10,3 +10,17 @@ function sumOfPositives(myArray) {
 }
 
 sumOfPositives([1, -3, 5, -2, 9, -8]);
+
+//2. Find Maximum Value
+function findMax(bigger) {
+    let big = bigger[0];
+  for (let i = 0; i < bigger.length; i++) {
+    if (bigger[i] >= big) {
+        big = bigger[i];
+    } 
+  }
+  console.log(`The maximum value is ${big}`)
+}
+
+findMax([2,5,8,7,6,10])
+findMax([-3.-7,0,9,4,9,2])
