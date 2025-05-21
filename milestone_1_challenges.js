@@ -153,4 +153,20 @@ function powerUp(num, times) {
   console.log(numberPower);
 }
 
+powerUp(2, 3);
+powerUp(5, 0);
+powerUp(3, 4);
 powerUp(0);
+
+//13. Factorial Calculator
+function factorial(n) {
+  let factorialNumber = 1;
+  for (i = 1; i <= n; i++) {
+    factorialNumber *= i; 
+  }
+  console.log(factorialNumber);
+}
+
+factorial(4)
+factorial(1)
+factorial(6)
