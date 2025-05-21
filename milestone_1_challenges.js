@@ -112,7 +112,7 @@ greetUser("Brian", 15);
 
 //9. FizzBuzz
 
-//Perimeter 2
+//10. Perimeter 2
 function perimeter(leter, num) {
   if (leter === "s") {
     let squarePerimeter = 4 * num;
@@ -125,3 +125,20 @@ function perimeter(leter, num) {
 
 perimeter("s", 7);
 perimeter("c", 4);
+
+//11. Sum of Even Numbers
+function sumEvenNumbers(n) {
+  let SumEven = 0;
+  for (i = 2; i <= n; i++) {
+    if (i % 2 == 0) {
+      SumEven = SumEven + i;
+    } else {
+      continue;
+    }
+  }
+  console.log(`Sum of even numbers from 0 to ${n} is ${SumEven}`);
+}
+
+sumEvenNumbers(6);
+sumEvenNumbers(10);
+sumEvenNumbers(5);
