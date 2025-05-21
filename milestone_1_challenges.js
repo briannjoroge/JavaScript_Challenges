@@ -109,3 +109,19 @@ function greetUser(name, hour) {
 
 greetUser("Bob", 1);
 greetUser("Brian", 15);
+
+//9. FizzBuzz
+
+//Perimeter 2
+function perimeter(leter, num) {
+  if (leter === "s") {
+    let squarePerimeter = 4 * num;
+    console.log(`Perimeter of a square of side ${num} is ${squarePerimeter}`);
+  } else if (leter === "c") {
+    let circlePerimeter = 6.28 * num;
+    console.log(`Perimeter of a circle of side ${num} is ${circlePerimeter}`);
+  }
+}
+
+perimeter("s", 7);
+perimeter("c", 4);
