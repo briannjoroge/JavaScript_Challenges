@@ -170,3 +170,18 @@ function factorial(n) {
 factorial(4)
 factorial(1)
 factorial(6)
+
+//14. Multiple Sum
+function sumMultiples(n, divisor) {
+  let SumEvenNumber = 0;
+  for (i = 1; i <= n; i++) {
+    if (i % divisor == 0) {
+      SumEvenNumber = SumEvenNumber + i;
+    } else {
+      continue;
+    }
+  }
+  console.log(`Sum of numbers divisible by ${divisor} from 0 to ${n} is ${SumEvenNumber}`);
+}
+
+sumMultiples(10, 2)
