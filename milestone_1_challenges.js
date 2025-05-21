@@ -111,6 +111,26 @@ greetUser("Bob", 1);
 greetUser("Brian", 15);
 
 //9. FizzBuzz
+function fizzBuzzCheck(number) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return "FizzBuzz";
+  }
+   else if (number % 3 === 0) 
+    {
+    return "Fizz";
+  }
+   else if (number % 5 === 0) {
+    return "Buzz";
+  } 
+  else {
+    return number.toString();
+  }
+}
+
+console.log(fizzBuzzCheck(3)); 
+console.log(fizzBuzzCheck(10));
+console.log(fizzBuzzCheck(15)); 
+console.log(fizzBuzzCheck(7));
 
 //10. Perimeter 2
 function perimeter(leter, num) {
@@ -185,3 +205,5 @@ function sumMultiples(n, divisor) {
 }
 
 sumMultiples(10, 2)
+
+//15. Sum of Digits
