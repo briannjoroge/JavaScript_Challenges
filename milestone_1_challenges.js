@@ -142,3 +142,15 @@ function sumEvenNumbers(n) {
 sumEvenNumbers(6);
 sumEvenNumbers(10);
 sumEvenNumbers(5);
+
+//12. Multiply by Itself
+function powerUp(num, times) {
+  let numberPower = 1;
+  for (i>=0; i=times;i++) {
+    numberPower = num**i
+    break;
+  }
+  console.log(numberPower)
+}
+
+powerUp(0)
