@@ -207,3 +207,15 @@ function sumMultiples(n, divisor) {
 sumMultiples(10, 2)
 
 //15. Sum of Digits
+// challage 15 Sum of Digits
+const sumDigits = (num) => {
+  sum = 0;
+  for (let i = 0; num > 0; num = Math.floor(num / 10)) {
+    sum += num % 10;
+  }
+
+  console.log(sum);
+};
+
+sumDigits(11111);
+sumDigits(22);
