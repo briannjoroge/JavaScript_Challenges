@@ -119,3 +119,16 @@ function countTruthy(truthyObject) {
 }
 
 console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
+
+//10. Average of Numbers
+function average(arrAverage) {
+  let sumAverage = 0;
+  for (i = 0; i < arrAverage.length; i++) {
+    if (arrAverage[i] >= 0) {
+      sumAverage = sumAverage + arrAverage[i];
+    }
+  }
+  return sumAverage / arrAverage.length;
+}
+
+console.log(`The average is ${average([2, 4, 6, 8])}`);
