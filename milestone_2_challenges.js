@@ -75,3 +75,16 @@ function filterByLength(arrString, minLength) {
 }
 
 filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5);
+
+//7. Sum of Even Numbers
+function sumEvenNumbers(arrNumber) {
+  let sumEvenArray = 0;
+  for (i = 0; i < arrNumber.length; i++) {
+    if (arrNumber[i] % 2 == 0) {
+      sumEvenArray = sumEvenArray + arrNumber[i];
+    }
+  }
+  console.log(`Sum of even numbers is ${sumEvenArray}`);
+}
+
+sumEvenNumbers([1, 2, 3, 4, 5, 6]);
