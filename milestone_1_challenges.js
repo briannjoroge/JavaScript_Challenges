@@ -114,22 +114,18 @@ greetUser("Brian", 15);
 function fizzBuzzCheck(number) {
   if (number % 3 === 0 && number % 5 === 0) {
     return "FizzBuzz";
-  }
-   else if (number % 3 === 0) 
-    {
+  } else if (number % 3 === 0) {
     return "Fizz";
-  }
-   else if (number % 5 === 0) {
+  } else if (number % 5 === 0) {
     return "Buzz";
-  } 
-  else {
+  } else {
     return number.toString();
   }
 }
 
-console.log(fizzBuzzCheck(3)); 
+console.log(fizzBuzzCheck(3));
 console.log(fizzBuzzCheck(10));
-console.log(fizzBuzzCheck(15)); 
+console.log(fizzBuzzCheck(15));
 console.log(fizzBuzzCheck(7));
 
 //10. Perimeter 2
@@ -182,14 +178,14 @@ powerUp(0);
 function factorial(n) {
   let factorialNumber = 1;
   for (i = 1; i <= n; i++) {
-    factorialNumber *= i; 
+    factorialNumber *= i;
   }
   console.log(factorialNumber);
 }
 
-factorial(4)
-factorial(1)
-factorial(6)
+factorial(4);
+factorial(1);
+factorial(6);
 
 //14. Multiple Sum
 function sumMultiples(n, divisor) {
@@ -201,10 +197,12 @@ function sumMultiples(n, divisor) {
       continue;
     }
   }
-  console.log(`Sum of numbers divisible by ${divisor} from 0 to ${n} is ${SumEvenNumber}`);
+  console.log(
+    `Sum of numbers divisible by ${divisor} from 0 to ${n} is ${SumEvenNumber}`,
+  );
 }
 
-sumMultiples(10, 2)
+sumMultiples(10, 2);
 
 //15. Sum of Digits
 const sumDigits = (num) => {

@@ -88,3 +88,21 @@ function sumEvenNumbers(arrNumber) {
 }
 
 sumEvenNumbers([1, 2, 3, 4, 5, 6]);
+
+//8. Difference Between Sum of Even and Odd Numbers
+function differenceEvenOdd(minusEvenOdd) {
+  let minusEven = 0,
+    minusOdd = 0;
+  for (let i = 0; i < minusEvenOdd.length; i++) {
+    if (minusEvenOdd[i] % 2 == 0) {
+      minusEven = minusEven + minusEvenOdd[i];
+    } else {
+      minusOdd += minusEvenOdd[i];
+    }
+  }
+  return minusEven - minusOdd;
+}
+
+console.log(
+  `The difference Between Sum of the above Even and Odd Numbers is  ${differenceEvenOdd([1, 2, 3, 4, 5, 6])}`,
+);
