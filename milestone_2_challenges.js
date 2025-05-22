@@ -106,3 +106,16 @@ function differenceEvenOdd(minusEvenOdd) {
 console.log(
   `The difference Between Sum of the above Even and Odd Numbers is  ${differenceEvenOdd([1, 2, 3, 4, 5, 6])}`,
 );
+
+// 9. Count Truthy
+function countTruthy(truthyObject) {
+  let objectCount = 0;
+  for (key in truthyObject) {
+    if (truthyObject[key]) {
+      objectCount++;
+    }
+  }
+  return objectCount;
+}
+
+console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
