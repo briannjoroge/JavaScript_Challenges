@@ -64,3 +64,14 @@ function countProperties(candidate) {
 }
 
 countProperties({ name: "Alice", age: 25, city: "Paris" });
+
+//6. Filter by Length
+function filterByLength(arrString, minLength) {
+  for (i = 0; i < arrString.length; i++) {
+    if (arrString[i].length >= minLength) {
+      console.log(arrString[i]);
+    }
+  }
+}
+
+filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5);
