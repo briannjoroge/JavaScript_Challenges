@@ -43,3 +43,16 @@ function findWinner(candidates) {
 }
 
 console.log(findWinner(candidates));
+
+//4. Longest word
+function findLongestWord(longer) {
+  let long = longer[0].length;
+  for (let i = 1; i < longer.length; i++) {
+    if (longer[i].length > longer[0].length) {
+      long = longer[i];
+    }
+  }
+  console.log(long);
+}
+
+findLongestWord(["tom", "jerry", "hulk", "ian", "matatu"]);
