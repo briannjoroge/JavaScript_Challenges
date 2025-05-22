@@ -56,3 +56,11 @@ function findLongestWord(longer) {
 }
 
 findLongestWord(["tom", "jerry", "hulk", "ian", "matatu"]);
+
+//5. Count Properties
+function countProperties(candidate) {
+  let lengthKey = Object.keys(candidate).length;
+  console.log(lengthKey);
+}
+
+countProperties({ name: "Alice", age: 25, city: "Paris" });
