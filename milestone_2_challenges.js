@@ -145,3 +145,20 @@ function linearSearch(arrLinear, searchNumber) {
 
 console.log(linearSearch([5, 3, 7, 1, 4], 7)); // returns: 2
 console.log(linearSearch([5, 3, 7, 1, 4], 10)); // returns: -1
+
+//12. Reverse Linear Search
+function reverseLinearSearch(arrReverse, numberSearch) {
+  for (let i = arrReverse.length; i >= 0; i--) {
+    if (arrReverse[i] == numberSearch) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+console.log(
+  `Position of first number is ${reverseLinearSearch([5, 3, 7, 1, 4, 7], 7)}`,
+); // returns: 5
+console.log(
+  `Position of first number is ${reverseLinearSearch([5, 3, 7, 1, 4], 10)}`,
+);
