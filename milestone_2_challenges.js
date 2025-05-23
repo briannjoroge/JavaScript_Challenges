@@ -176,3 +176,16 @@ function linearSearchAll(arrayLinear, searchedNumber) {
 
 console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7)); // returns: [2, 5]
 console.log(linearSearchAll([5, 3, 7, 1, 4], 10)); // returns: []
+
+//14. Count Occurrences
+function countOccurrences(arrCount) {
+  let countArray = {};
+  for (let i = 0; i < arrCount.length; i++) {
+    let num = arrCount[i];
+    countArray[num] = countArray[num] ? countArray[num] + 1 : 1;
+  }
+  return countArray;
+}
+
+console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]),);
+// returns: { apple: 3, banana: 2, orange: 1 }
