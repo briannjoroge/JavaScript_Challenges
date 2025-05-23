@@ -162,3 +162,17 @@ console.log(
 console.log(
   `Position of first number is ${reverseLinearSearch([5, 3, 7, 1, 4], 10)}`,
 );
+
+//13. Linear Search All Indices
+function linearSearchAll(arrayLinear, searchedNumber) {
+  let arrayPosition = [];
+  for (let i = 0; i < arrayLinear.length; i++) {
+    if (arrayLinear[i] == searchedNumber) {
+      arrayPosition.push(i);
+    }
+  }
+  return arrayPosition;
+}
+
+console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7)); // returns: [2, 5]
+console.log(linearSearchAll([5, 3, 7, 1, 4], 10)); // returns: []
