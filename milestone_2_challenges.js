@@ -187,17 +187,39 @@ function countOccurrences(arrCount) {
   return countArray;
 }
 
-console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]),);
+console.log(
+  countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]),
+);
 // returns: { apple: 3, banana: 2, orange: 1 }
 
 // 15. Remove Duplicates
 function removeDuplicates(arr) {
-  return arr.filter(function(value, index) {
+  return arr.filter(function (value, index) {
     return arr.indexOf(value) === index;
   });
 }
 
-console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5])); 
+console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
 // Outputs: [1, 2, 3, 4, 5]
 
+//16. Most Frequent
+function mostFrequent(arrFrequent) {
+  const objectFrequent = {};
+  for (let i = 0; i < arrFrequent.length; i++) {
+    let frequent = arrFrequent[i];
+    if (objectFrequent[frequent]) {
+      objectFrequent[frequent]++;
+    } else {
+      objectFrequent[frequent] = 1;
+    }
+  }
+  return objectFrequent;
+}
 
+console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]));
+// returns: 3
+
+console.log(
+  mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"]),
+);
+// returns: "apple"
