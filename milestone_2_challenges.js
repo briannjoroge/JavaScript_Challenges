@@ -205,6 +205,9 @@ console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
 //16. Most Frequent
 function mostFrequent(arrFrequent) {
   const objectFrequent = {};
+  let maxFrequency = -Infinity;
+  let freq = null;
+
   for (let i = 0; i < arrFrequent.length; i++) {
     let frequent = arrFrequent[i];
     if (objectFrequent[frequent]) {
@@ -213,13 +216,19 @@ function mostFrequent(arrFrequent) {
       objectFrequent[frequent] = 1;
     }
   }
-  return objectFrequent;
+  for (let x in objectFrequent) {
+    if (objectFrequent[x] > maxFrequency) {
+      maxFrequency = objectFrequent[x];
+      freq = x;
+    }
+  }
+
+  return freq;
 }
 
 console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]));
 // returns: 3
 
 console.log(
-  mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"]),
-);
+  mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"]));
 // returns: "apple"
