@@ -4,5 +4,5 @@ function addition(num1: number, num2: number): number {
   return sum;
 }
 
-console.log(addition(3, 5));
-console.log(addition(-6, 9));
+console.log(`3 + 5 = ${addition(3, 5)}`);
+console.log(`-6 + 9 = ${addition(-6, 9)}`);
