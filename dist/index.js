@@ -452,3 +452,14 @@ function filterByLength(arrString, minLength) {
   return wordContainer.length > 0 ? wordContainer : ["error!"];
 }
 console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5));
+//7. Sum of Even Numbers
+function sumEvenNumbers(arrNumber) {
+  let sumEvenArray = 0;
+  for (let i = 0; i < arrNumber.length; i++) {
+    if (arrNumber[i] % 2 == 0) {
+      sumEvenArray = sumEvenArray + arrNumber[i];
+    }
+  }
+  return `Sum of even numbers is ${sumEvenArray}`;
+}
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
