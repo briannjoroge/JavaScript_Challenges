@@ -1,62 +1,72 @@
 "use strict";
 //1. Return the Sum of Two Numbers
 function addition(num1, num2) {
-    let sum = num1 + num2;
-    return sum;
+  let sum = num1 + num2;
+  return sum;
 }
 console.log(`3 + 5 = ${addition(3, 5)}`);
 console.log(`-6 + 9 = ${addition(-6, 9)}`);
 //2. Convert Minutes into Seconds
 function convert(min) {
-    let secondd = min * 60;
-    return secondd;
+  let secondd = min * 60;
+  return secondd;
 }
 console.log(` 5 min = ${convert(5)}s`);
 console.log(` 1 min = ${convert(1)}s`);
 //3. Perimeter of a Rectangle
 function findPerimeter(width, length) {
-    let perimeter = 2 * (width + length);
-    return perimeter;
+  let perimeter = 2 * (width + length);
+  return perimeter;
 }
 console.log(`Perimeter = ${findPerimeter(6, 7)}`);
 console.log(`Perimeter = ${findPerimeter(20, 10)}`);
 //4. Check Negative
 function isNegative(negativeNumber) {
-    if (negativeNumber < 0) {
-        return true;
-    }
-    else {
-        return false;
-    }
+  if (negativeNumber < 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 console.log(`-23 is negative = ${isNegative(-23)}`);
 console.log(`59 is negative = ${isNegative(59)}`);
 //5. Can I Drive
 function canDrive(name, age) {
-    if (age >= 18) {
-        return `${name}, ${age} years, is old enough to drive.`;
-    }
-    else {
-        return `${name}, ${age} years, is not old enough to drive.`;
-    }
+  if (age >= 18) {
+    return `${name}, ${age} years, is old enough to drive.`;
+  } else {
+    return `${name}, ${age} years, is not old enough to drive.`;
+  }
 }
 console.log(canDrive("Jane", 22));
 console.log(canDrive("June", 12));
 //6. Largest Number
 function findLargest(a, b, c) {
-    if (a > b || a > b) {
-        return `${a} is largest.`;
-    }
-    else if (b > a || b > c) {
-        return `${b} is largest.`;
-    }
-    else if (a === b && a === c) {
-        return `${a} is the largest.`;
-    }
-    else {
-        return `${c} is the largest.`;
-    }
+  if (a > b || a > b) {
+    return `${a} is largest.`;
+  } else if (b > a || b > c) {
+    return `${b} is largest.`;
+  } else if (a === b && a === c) {
+    return `${a} is the largest.`;
+  } else {
+    return `${c} is the largest.`;
+  }
 }
 console.log(findLargest(5, 9, 3));
 console.log(findLargest(10, 10, 10));
 console.log(findLargest(-1, -5, -3));
+//7. BMI Calculator BMI = weight / (height * height)
+function calculateBMI(weight, height) {
+  const bmiValue = Number((weight / (height * height)).toFixed(3));
+  if (bmiValue < 18.5) {
+    return `Your BMI is ${bmiValue} - underweight`;
+  } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
+    return `Your BMI is ${bmiValue} - Normal weight`;
+  } else if (bmiValue >= 25 && bmiValue <= 29.9) {
+    return `Your BMI is ${bmiValue} - Over weight`;
+  } else {
+    return `Your BMI is ${bmiValue} - obese`;
+  }
+}
+console.log(calculateBMI(68, 1.75));
+console.log(calculateBMI(85, 1.8));

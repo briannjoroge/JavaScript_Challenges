@@ -65,3 +65,20 @@ function findLargest(a: number, b: number, c: number): string {
 console.log(findLargest(5, 9, 3));
 console.log(findLargest(10, 10, 10));
 console.log(findLargest(-1, -5, -3));
+
+//7. BMI Calculator BMI = weight / (height * height)
+function calculateBMI(weight: number, height: number): string {
+  const bmiValue = Number((weight / (height * height)).toFixed(3));
+  if (bmiValue < 18.5) {
+    return `Your BMI is ${bmiValue} - underweight`;
+  } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
+    return `Your BMI is ${bmiValue} - Normal weight`;
+  } else if (bmiValue >= 25 && bmiValue <= 29.9) {
+    return `Your BMI is ${bmiValue} - Over weight`;
+  } else {
+    return `Your BMI is ${bmiValue} - obese`;
+  }
+}
+
+console.log(calculateBMI(68, 1.75));
+console.log(calculateBMI(85, 1.8));
