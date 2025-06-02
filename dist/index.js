@@ -149,3 +149,14 @@ function factorial(n) {
 console.log(factorial(4));
 console.log(factorial(1));
 console.log(factorial(6));
+//14. Multiple Sum
+function sumMultiples(n, divisor) {
+  let SumEvenNumber = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % divisor == 0) {
+      SumEvenNumber = SumEvenNumber + i;
+    }
+  }
+  return `Sum of numbers divisible by ${divisor} from 0 to ${n} is ${SumEvenNumber}`;
+}
+console.log(sumMultiples(10, 2));
