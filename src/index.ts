@@ -134,3 +134,18 @@ function perimeter(leter: string, num: number) {
 
 console.log(perimeter("s", 7));
 console.log(perimeter("c", 4));
+
+//11. Sum of Even Numbers
+function sumEvenNumbers(n: number): string {
+  let sumEven = 0;
+  for (let i = 2; i <= n; i++) {
+    if (i % 2 == 0) {
+      sumEven = sumEven + i;
+    }
+  }
+  return `Sum of even numbers from 0 to ${n} is ${sumEven}`;
+}
+
+console.log(sumEvenNumbers(6));
+console.log(sumEvenNumbers(10));
+console.log(sumEvenNumbers(5));
