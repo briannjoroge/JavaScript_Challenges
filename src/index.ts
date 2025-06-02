@@ -149,3 +149,14 @@ function sumEvenNumbers(n: number): string {
 console.log(sumEvenNumbers(6));
 console.log(sumEvenNumbers(10));
 console.log(sumEvenNumbers(5));
+
+//12. Multiply by Itself
+function powerUp(num: number, times: number = 0): string {
+  let numberPower = num ** times;
+  return `${num}^${times} = ${numberPower}`;
+}
+
+console.log(powerUp(2, 3));
+console.log(powerUp(5, 0));
+console.log(powerUp(3, 4));
+console.log(powerUp(0));
