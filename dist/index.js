@@ -397,7 +397,6 @@ function sumOfPositives(myArray) {
   return `sum of possitive numbers in the array is ${sum}`;
 }
 console.log(sumOfPositives([1, -3, 5, -2, 9, -8]));
-
 //2. Find Maximum Value
 function findMax(bigger) {
   let big = bigger[0];
@@ -410,3 +409,18 @@ function findMax(bigger) {
 }
 console.log(findMax([2, 5, 8, 7, 6, 10]));
 console.log(findMax([-3 - 7, 0, 9, 4, 9, 2]));
+const candidates = [
+  { name: "Alice", votes: 50 },
+  { name: "Bob", votes: 75 },
+  { name: "Charlie", votes: 65 },
+];
+function findWinner(candidates) {
+  let winner = candidates[0];
+  for (let i = 0; i < candidates.length; i++) {
+    if (candidates[i].votes > winner.votes) {
+      winner = candidates[i];
+    }
+  }
+  return winner;
+}
+console.log(findWinner(candidates));
