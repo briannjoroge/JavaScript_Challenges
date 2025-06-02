@@ -82,3 +82,21 @@ function calculateBMI(weight: number, height: number): string {
 
 console.log(calculateBMI(68, 1.75));
 console.log(calculateBMI(85, 1.8));
+
+//8. Greeting Based On Time
+function greetUser(name: string, hour: number): string {
+  if (hour >= 5 && hour <= 11) {
+    return `"Good morning, ${name}!"`;
+  } else if (hour >= 12 && hour <= 17) {
+    return `"Good afternoon, ${name}!"`;
+  } else if (hour >= 18 && hour <= 21) {
+    return `"Good evening, ${name}!"`;
+  } else if ((hour >= 22 && hour <= 24) || (hour >= 0 && hour <= 4)) {
+    return `"Good night, ${name}!"`;
+  } else {
+    return "Input btwn 0 - 24 HRS";
+  }
+}
+
+console.log(greetUser("Bob", 1));
+console.log(greetUser("Brian", 15));
