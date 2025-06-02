@@ -397,3 +397,16 @@ function sumOfPositives(myArray) {
   return `sum of possitive numbers in the array is ${sum}`;
 }
 console.log(sumOfPositives([1, -3, 5, -2, 9, -8]));
+
+//2. Find Maximum Value
+function findMax(bigger) {
+  let big = bigger[0];
+  for (let i = 0; i < bigger.length; i++) {
+    if (bigger[i] >= big) {
+      big = bigger[i];
+    }
+  }
+  return `The maximum value is ${big}`;
+}
+console.log(findMax([2, 5, 8, 7, 6, 10]));
+console.log(findMax([-3 - 7, 0, 9, 4, 9, 2]));
