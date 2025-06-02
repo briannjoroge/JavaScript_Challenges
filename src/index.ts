@@ -11,7 +11,7 @@ console.log(`-6 + 9 = ${addition(-6, 9)}`);
 function convert(min: number): number {
   let secondd = min * 60;
   return secondd;
-}
+} 
 
 console.log(` 5 min = ${convert(5)}s`);
 console.log(` 1 min = ${convert(1)}s`);
