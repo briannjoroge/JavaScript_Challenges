@@ -24,3 +24,17 @@ function findPerimeter(width: number, length: number): number {
 
 console.log(`Perimeter = ${findPerimeter(6, 7)}`);
 console.log(`Perimeter = ${findPerimeter(20, 10)}`);
+
+//4. Check Negative
+function isNegative(negativeNumber: number) {
+  if (negativeNumber < 0) {
+    // console.log(`true`);
+    return true;
+  } else {
+    // console.log(`false`);
+    return false;
+  }
+}
+
+console.log(`-23 is negative = ${isNegative(-23)}`);
+console.log(`59 is negative = ${isNegative(59)}`);
