@@ -15,3 +15,12 @@ function convert(min: number): number {
 
 console.log(` 5 min = ${convert(5)}s`);
 console.log(` 1 min = ${convert(1)}s`);
+
+//3. Perimeter of a Rectangle
+function findPerimeter(width: number, length: number): number {
+  let perimeter = 2 * (width + length);
+  return perimeter;
+}
+
+console.log(`Perimeter = ${findPerimeter(6, 7)}`);
+console.log(`Perimeter = ${findPerimeter(20, 10)}`);
