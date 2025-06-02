@@ -160,3 +160,16 @@ function sumMultiples(n, divisor) {
   return `Sum of numbers divisible by ${divisor} from 0 to ${n} is ${SumEvenNumber}`;
 }
 console.log(sumMultiples(10, 2));
+//15. Sum of Digits
+function sumDigits(num) {
+  let sum = 0;
+  while (num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
+  return `sum of each digit is ${sum}`;
+}
+console.log(sumDigits(11111));
+console.log(sumDigits(22));
+console.log(sumDigits(987));
+console.log(sumDigits(0));
