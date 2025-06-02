@@ -275,6 +275,7 @@ function countProperties(candidate: object): number {
 }
 
 console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
+<<<<<<< HEAD
 
 //6. Filter by Length
 function filterByLength(arrString: string[], minLength: number): string[] {
