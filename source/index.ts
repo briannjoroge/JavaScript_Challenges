@@ -468,8 +468,5 @@ console.log(mostFrequent({ arrFrequent: [1, 2, 2, 3, 3, 3, 4] })); // returns: 3
 //     arrFrequent: ["apple", "banana", "apple", "orange", "banana", "apple"],
 //   }),
 // ); // returns: "apple"
-<<<<<<< HEAD:src/index.ts
 
 console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
-=======
->>>>>>> b60a34f (Completed):source/index.ts
