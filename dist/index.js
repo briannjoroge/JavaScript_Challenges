@@ -386,3 +386,14 @@ console.log(mostFrequent({ arrFrequent: [1, 2, 2, 3, 3, 3, 4] })); // returns: 3
 //     arrFrequent: ["apple", "banana", "apple", "orange", "banana", "apple"],
 //   }),
 // ); // returns: "apple"
+//1. Sum of Positives
+function sumOfPositives(myArray) {
+  let sum = 0;
+  for (let i = 0; i < myArray.length; i++) {
+    if (myArray[i] >= 0) {
+      sum = sum + myArray[i];
+    }
+  }
+  return `sum of possitive numbers in the array is ${sum}`;
+}
+console.log(sumOfPositives([1, -3, 5, -2, 9, -8]));
