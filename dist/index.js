@@ -503,3 +503,14 @@ function average(arrAverage) {
   return sumAverage / arrAverage.length;
 }
 console.log(`The average is ${average([2, 4, 6, 8])}`);
+//11. Linear Search
+function linearSearch(arrLinear, searchNumber) {
+  for (let i = 0; i < arrLinear.length; i++) {
+    if (arrLinear[i] == searchNumber) {
+      return i;
+    }
+  }
+  return -1;
+}
+console.log(linearSearch([5, 3, 7, 1, 4], 7)); // returns: 2
+console.log(linearSearch([5, 3, 7, 1, 4], 10)); // returns: -1
