@@ -275,7 +275,6 @@ function countProperties(candidate: object): number {
 }
 
 console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
-<<<<<<< HEAD
 
 //6. Filter by Length
 function filterByLength(arrString: string[], minLength: number): string[] {
@@ -469,3 +468,5 @@ console.log(mostFrequent({ arrFrequent: [1, 2, 2, 3, 3, 3, 4] })); // returns: 3
 //     arrFrequent: ["apple", "banana", "apple", "orange", "banana", "apple"],
 //   }),
 // ); // returns: "apple"
+
+console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
