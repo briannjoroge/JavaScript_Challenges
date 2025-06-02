@@ -545,3 +545,17 @@ console.log(
 console.log(
   linearSearchAll({ arrayLinear: [5, 3, 7, 1, 4], searchedNumber: 10 }),
 ); //returns: []
+//14. Count Occurrences
+function countOccurrences({ arrCount }) {
+  let countArray = {};
+  for (let i = 0; i < arrCount.length; i++) {
+    let num = arrCount[i];
+    countArray[num] = countArray[num] ? countArray[num] + 1 : 1;
+  }
+  return countArray;
+}
+console.log(
+  countOccurrences({
+    arrCount: ["apple", "banana", "apple", "orange", "banana", "apple"],
+  }),
+); // returns: { apple: 3, banana: 2, orange: 1 }
