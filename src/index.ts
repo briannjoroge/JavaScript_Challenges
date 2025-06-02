@@ -100,3 +100,21 @@ function greetUser(name: string, hour: number): string {
 
 console.log(greetUser("Bob", 1));
 console.log(greetUser("Brian", 15));
+
+//9. FizzBuzz
+function fizzBuzzCheck(number: number): string {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return "FizzBuzz";
+  } else if (number % 3 === 0) {
+    return "Fizz";
+  } else if (number % 5 === 0) {
+    return "Buzz";
+  } else {
+    return number.toString();
+  }
+}
+
+console.log(fizzBuzzCheck(3));
+console.log(fizzBuzzCheck(10));
+console.log(fizzBuzzCheck(15));
+console.log(fizzBuzzCheck(7));
