@@ -409,7 +409,7 @@ function findMax(bigger) {
 }
 console.log(findMax([2, 5, 8, 7, 6, 10]));
 console.log(findMax([-3 - 7, 0, 9, 4, 9, 2]));
-const candidates = [
+candidates = [
   { name: "Alice", votes: 50 },
   { name: "Bob", votes: 75 },
   { name: "Charlie", votes: 65 },
@@ -441,3 +441,14 @@ function countProperties(candidate) {
   return lengthKey;
 }
 console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
+//6. Filter by Length
+function filterByLength(arrString, minLength) {
+  let wordContainer = [];
+  for (let i = 0; i < arrString.length; i++) {
+    if (arrString[i].length >= minLength) {
+      wordContainer.push(arrString[i]);
+    }
+  }
+  return wordContainer.length > 0 ? wordContainer : ["error!"];
+}
+console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5));
