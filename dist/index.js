@@ -526,9 +526,22 @@ function reverseLinearSearch({ arrReverse, numberSearch }) {
 console.log(
   `Position of first number is ${reverseLinearSearch({ arrReverse: [5, 3, 7, 1, 4, 7], numberSearch: 7 })}`,
 ); // returns: 5
-// console.log(
-//   `Position of first number is ${reverseLinearSearch([5, 3, 7, 1, 4], 10)}`,
-// );
 console.log(
   `Position of first number is ${reverseLinearSearch({ arrReverse: [5, 3, 7, 1, 4, 7], numberSearch: 10 })}`,
-);
+); // returns -1
+//13. Linear Search All Indices
+function linearSearchAll({ arrayLinear, searchedNumber }) {
+  let arrayPosition = [];
+  for (let i = 0; i < arrayLinear.length; i++) {
+    if (arrayLinear[i] == searchedNumber) {
+      arrayPosition.push(i);
+    }
+  }
+  return arrayPosition;
+}
+console.log(
+  linearSearchAll({ arrayLinear: [5, 3, 7, 1, 4, 7], searchedNumber: 7 }),
+); // returns: [2, 5]
+console.log(
+  linearSearchAll({ arrayLinear: [5, 3, 7, 1, 4], searchedNumber: 10 }),
+); //returns: []
