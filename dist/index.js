@@ -138,3 +138,14 @@ console.log(powerUp(2, 3));
 console.log(powerUp(5, 0));
 console.log(powerUp(3, 4));
 console.log(powerUp(0));
+//13. Factorial Calculator
+function factorial(n) {
+  let factorialNumber = 1;
+  for (let i = 1; i <= n; i++) {
+    factorialNumber *= i;
+  }
+  return `${n}! = ${factorialNumber}`;
+}
+console.log(factorial(4));
+console.log(factorial(1));
+console.log(factorial(6));
