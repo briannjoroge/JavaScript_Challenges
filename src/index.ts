@@ -28,13 +28,23 @@ console.log(`Perimeter = ${findPerimeter(20, 10)}`);
 //4. Check Negative
 function isNegative(negativeNumber: number) {
   if (negativeNumber < 0) {
-    // console.log(`true`);
     return true;
   } else {
-    // console.log(`false`);
     return false;
   }
 }
 
 console.log(`-23 is negative = ${isNegative(-23)}`);
 console.log(`59 is negative = ${isNegative(59)}`);
+
+//5. Can I Drive
+function canDrive(name: string, age: number) {
+  if (age >= 18) {
+    return `${name}, ${age} years, is old enough to drive.`;
+  } else {
+    return `${name}, ${age} years, is not old enough to drive.`;
+  }
+}
+
+console.log(canDrive("Jane", 22));
+console.log(canDrive("June", 12));
