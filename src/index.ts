@@ -118,3 +118,19 @@ console.log(fizzBuzzCheck(3));
 console.log(fizzBuzzCheck(10));
 console.log(fizzBuzzCheck(15));
 console.log(fizzBuzzCheck(7));
+
+//10. Perimeter 2
+function perimeter(leter: string, num: number) {
+  if (leter === "s") {
+    let squarePerimeter = 4 * num;
+    return `Perimeter of a square of side ${num} is ${squarePerimeter}`;
+  } else if (leter === "c") {
+    let circlePerimeter = 6.28 * num;
+    return `Perimeter of a circle of side ${num} is ${circlePerimeter}`;
+  } else {
+    return "Enter valid letter";
+  }
+}
+
+console.log(perimeter("s", 7));
+console.log(perimeter("c", 4));
