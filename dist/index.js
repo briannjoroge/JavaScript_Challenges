@@ -424,3 +424,14 @@ function findWinner(candidates) {
   return winner;
 }
 console.log(findWinner(candidates));
+//4. Longest word
+function findLongestWord(longer) {
+  let long = longer[0];
+  for (let i = 1; i < longer.length; i++) {
+    if (longer[i].length > longer[0].length) {
+      long = longer[i];
+    }
+  }
+  return long;
+}
+console.log(findLongestWord(["tom", "jerry", "hulk", "ian", "matatu"]));
